@@ -1,0 +1,208 @@
+//- Use the presentation layout so we can keep this clean
+extends layouts/presentation
+
+//- Customize the title, meta description, and author using this block.
+block append config
+  -
+    config.title = 'reveal.js + Pug - The HTML Presentation Framework';
+    config.description = 'A framework for easily creating beautiful presentations using HTML by @hakimel. Ported to Pug by @jlengstorf.';
+  -
+
+//- Add your slides here. See templates/includes/_mixins.pug for information 
+//- on how `+slide` works.
+block slides
+  +slide
+    h1 Discover how #[strong iterative testing]
+    h2 Gets you winning designs
+   
+
+  +slide
+    h1 Hi, I'm #[strong Marisa]
+
+  +slide
+    h3 I do UX Research, Design, and Product Management. 
+    p Digital optimization agency called Clearhead. 
+    p I do user research and A/B testing for companies like Adidas and Tesco.
+
+  +slide
+    h2 Cool story Marisa... 
+    h3 what are we doing today?
+
+  +slide
+
+    h2 Today we'll:
+    ul
+     li(align="left") Create a design prototype
+     li(align="left") Validate that design with real data
+     li(align="left") Learn to understand the feedback you get
+     li(align="left") Learn when your prototype is ready 
+     li(align="left") Learn strategies for continually gathering user data
+
+  +slide
+    h1 Why care about prototype testing?
+
+  +slide
+    h2 Testing allows you to:
+    ul
+     li(align="left") Save money
+     li(align="left") Save time
+     li(align="left") Ensure #[strong awesome-ness]
+
+  +slide
+    h1 Here's the story
+
+  +slide
+    h2 You've been hired. 
+    h3 Now you need to #[strong fix this site]. 
+   
+  +slide
+    img(src="./img-2/bbc.png")
+    p(style="margin: 0;") Source: 
+      a(href="http://www.bbc.com/") BBC
+
+  +slide
+    h2 #[strong Your mission:] 
+    h3 get people to sign up for the newsletter.
+
+  +slide
+    h1 You're about to make a new friend
+
+
+  +slide
+    h1 #1. Create your #[strong sketch]
+
+  +slide
+    img(src="./img-2/sketch-example.png")
+
+  +slide
+    ul
+     li(align="left") You have 15 minutes 
+     li(alight="left") Sketch the changes you would make
+  
+  +slide
+    h1 #2. Design your #[strong prototype] 
+
+  +slide
+    h2 #[strong Demo] Time
+
+  +slide
+    ul
+     li(align="left") I'm going to put you into groups
+     li(align="left") Take 45 minutes as a group to create your design
+    p Free Add-on Resource: 
+      a(href="https://www.sketchappsources.com/free-source/527-grid-wireframe-toolkit-sketch-freebie-resource.html") Sketch Grid Wireframe
+
+
+  +slide
+    h1 #3. Make it #[strong clickable]
+    
+
+  +slide
+    img(src="./img-2/invision-prototype.png")
+    p 
+      a(href="https://invis.io/JV974MZWX") Clickable Prototype 
+
+  +slide
+    ul
+     li(align="left") Take 45 minutes as a group to put the design in InVision 
+
+  +slide
+    h1 #4. Create your #[strong questions]
+
+  +slide
+    h2 We're going to come up with #[strong 5 questions] to ask users
+    aside.notes.
+      5 second user test
+      Testing interactions
+
+
+  +slide
+    h2 Remember
+    h3 When user testing, we want to #[strong falsify] our idea. Not validate it.
+    p If we lead with validation, we'll skew the test trying to get the answers we want.
+
+
+  +slide 
+    h1 #5. #[strong Test] those designs!
+
+    aside.notes.
+      15 minutes
+
+  +slide
+    h2 You're the user
+    ul
+     li(align="left") Trade prototypes 
+     li(align="left") Go through the questions
+     li(align="left") Write down notes and feedback
+
+  +slide
+    h1 #6. Review feedback
+
+  +slide
+    h2 What was the feedback?
+    h3 What changes should we make to these prototypes?
+
+  +slide
+    h1 #7. Putting it all together
+
+  +slide
+    h1 When is my design #[strong “good enough”]?
+
+  +slide
+    ul
+     li(align="left") The 
+       a(href="https://usabilityhub.com/five-second-test") 5 second test is a success
+     li(align="left") The main interaction runs smoothly   
+     li(align="left") Feedback is mainly positive with minimum confusion 
+
+  +slide
+    h1 #[strong Strategies] for gathering user data 
+
+  +slide
+    h2 Sites like these
+    ul
+      li(align="left")
+        a(href="https://www.usertesting.com/") User Testing
+        
+      li(align="left")
+        a(href="https://www.usertesting.com/") AYTM
+
+      li(align="left")
+        a(href="https://www.hotjar.com/") Hotjar
+
+      li(align="left") 
+        a(href="https://www.qualtrics.com/") Qualtrics
+
+      li(align="left")
+        a(href="https://www.crazyegg.com/") Crazy Egg
+  
+  +slide
+    h2 Free methods
+    ul
+      li(align="left") Surveying users at the location 
+      li(align="left") Reaching out to your extended network
+      li(align="left") Watching family or friends on the site
+      li(align="left") Critically reviewing the site yourself
+      li(align="left") 
+        a(href="https://usabilityhub.com/") Usability Hub
+
+  +slide
+    h2 Resources
+    ul
+      li #[strong User Experience Strategy] by Jamie Levy
+      li
+        a(href="https://www.nngroup.com/") #[strong Nielsen Norman Group]
+
+      li #[strong Small Data: The Tiny Clues that Uncover Huge Trends] by Martin Lindstrom
+
+  +slide
+    h2 From the workshop
+    p 
+     a(href="https://invis.io/8JBT41MPF#/234828661_Desktop_Before-1x") Prototype design on invision
+      
+
+  +slide
+    h1 #[strong Thanks!]
+    h2 Questions... comments... cookies?
+
+
