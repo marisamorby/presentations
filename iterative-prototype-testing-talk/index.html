@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://use.typekit.net/mvn0eaw.js"></script>
+    <script>
+      try{Typekit.load({ async: true });}catch(e){}
+      
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>reveal.js + Pug - The HTML Presentation Framework</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML by @hakimel. Ported to Pug by @jlengstorf.">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link id="theme" rel="stylesheet" href="css/theme/morby.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+      
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Discover how </h2>
+          <h1><strong>iterative prototype testing</strong></h1>
+          <h2>Helps you create winning designs</h2>
+          <p>(every time!)</p>
+        </section>
+        <section>
+          <h1>Hi, I'm <strong>Marisa</strong></h1>
+          <aside class="notes">
+            2 minutes for intro. 
+            
+          </aside>
+        </section>
+        <section>
+          <h3>I'm the Head of Research at Clearhead. </h3><br>
+          <p>I'm responsible for <strong>Product Management and Research.</strong></p>
+        </section>
+        <section>
+          <p>We do experience optimization and customer research for companies like <strong>Adidas, Tesco, Sonos,</strong> and many more.</p><br>
+          <p>My job is to make the process of buying or using products online <strong>better, faster, and easier</strong>.</p>
+        </section>
+        <section>
+          <h3>Today we'll...</h3><br>
+          <ul>
+            <li>Learn how to create a paper prototype</li><br>
+            <li>Learn strategies for testing prototypes with minimal design and development effort</li><br>
+            <li>See how to implement feedback early to ensure every design will be a winner</li>
+          </ul>
+        </section>
+        <section>
+          <h3>The <strong>old</strong> process</h3><br>
+          <ul>
+            <li>Spend hours and hours designing and developing</li><br>
+            <li>Ship the product or service to meet the deadline</li><br>
+            <li>Watch in fear and horror as it tanks</li>
+          </ul>
+        </section>
+        <section><img style="width: 1200px" src="gifs/puppy-explode.gif">
+          <aside class="notes">
+            We don't have to feel like this. We're experienced and creative people who create amazing things, but we can be our own worst enemy. We end up to focused on things that aren't going to make a measurable difference to the people we're trying to reach. 
+            
+            
+          </aside>
+        </section>
+        <section>
+          <h3>But what if it could be <strong>different</strong>?</h3>
+        </section>
+        <section>
+          <h3>Imagine the <strong>possiblities</strong></h3><br>
+          <ul>
+            <li>Spend hours and hours designing and developing</li><br>
+            <li>Ship the product or service to meet the deadline</li><br>
+            <li><strong>Watch with excitement as you conquered</strong></li>
+          </ul>
+        </section>
+        <section><img style="width: 1200px" src="gifs/girl-smashes-ornaments.gif">
+          <aside class="notes">
+            There's a better way to do what we do. And it's not going to mean convincing your boss, taking over your team, or spending more time or money. Instead, it's something you can immediately include in the process you've already got at your work. 
+            
+          </aside>
+        </section>
+        <section>
+          <h3>The </h3>
+          <h1><strong>new, improved, markedly better</strong> </h1>
+          <h3>process</h3>
+        </section>
+        <section>
+          <h3>Step One</h3>
+          <h1>Start with your <strong>prototype</strong> </h1>
+          <aside class="notes">
+            How many of you here have done paper prototyping in the past? What other ways do you do low fidelity prototyping? Do you do prototyping at all?
+            
+            
+          </aside>
+        </section>
+        <section><img src="./img-2/file_003.jpeg">
+          <aside class="notes">
+            This extremely low fidelity paper prototype is a great first start to sketch out your idea. If you prefer to do low fidelity mockups with Sketch or Invision, that works, too. The goal is to get the initial steps and process written out.
+            
+          </aside>
+        </section>
+        <section>
+          <h3>How to create a prototype</h3>
+          <ul>
+            <li>Cross-functional team </li><br>
+            <li>Collaboration</li><br>
+          </ul>
+        </section>
+        <section>
+          <h3>Remember...</h3><br>
+          <ul>
+            <li>Keep the initial prototype low fidelity if it's a new design</li><br>
+            <li>If you're updating an exisiting design, keep the first round of changes as low fidelity as possible</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Ok... but why?</h3><br>
+          <ul>
+            <li>You want to focus on the major interactions and design layout without getting too hung up on details</li><br>
+            <li>Since you're doing <strong>iterative testing</strong>, you want to make sure you can pivot quickly</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Step Two</h3>
+          <h1>Pick your <strong>Research</strong></h1>
+        </section>
+        <section>
+          <h1>How would you...</h1>
+        </section>
+        <section>
+          <h3>Find your demographic?</h3>
+        </section>
+        <section>
+          <h3>Test them?</h3>
+        </section>
+        <section>
+          <h3>Identify available testing options?</h3>
+        </section>
+        <section>
+          <h3>Decide how long the test should be?</h3>
+          <aside class="notes">
+            11:00 - 11:20. 20 minutes as an open discussion. What other questions should we ask ourselves? Think about email recruitment, surveys, polls, moderated and unmoderated testing. Consider resources and time available.
+            
+          </aside>
+        </section>
+        <section> 
+          <h1>Questions to Ask</h1>
+        </section>
+        <section>
+          <h3>Who are the people using our thing?</h3>
+        </section>
+        <section>
+          <h3>Why are these people using our thing?</h3>
+        </section>
+        <section>
+          <h3>How do people use our thing? And when?</h3>
+        </section>
+        <section>
+          <h3>It's hide and seek... for <strong>professionals</strong>!</h3>
+          <p>(not really)</p>
+        </section>
+        <section>
+          <h3>Where to find people</h3>
+          <ul>
+            <li>Reddit</li><br>
+            <li>LinkedIn</li><br>
+            <li>Friends, Family, Acquaintances</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Cognitive Walkthrough</h3><br>
+          <ul>
+            <li>Subject Matter Expert review</li><br>
+            <li>Use this when you're on a tight timeline and have to get information in a day or less</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Guerilla Research</h3><br>
+          <ul>
+            <li>Talking with humans that haven't seen your product or site</li><br>
+            <li>Use this when you've got a few days (even 3 days is enough) to gather information and write it up</li>
+          </ul>
+        </section>
+        <section>
+          <h3>What are the benefits of quick research tests?</h3><br>
+          <ul>
+            <li>Problem discovery</li><br>
+            <li>Directional insights</li><br>
+            <li>Actionable changes</li><br>
+            <li>Get insights before you spend a lot of money </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Step Three</h3>
+          <h1>Create your <strong>questions</strong></h1>
+        </section>
+        <section>
+          <h3>Ask yourself</h3><br>
+          <ul>
+            <li>What is the main goal for the user?</li><br>
+            <li>What are the top 3 things you want to learn from interview?</li><br>
+            <li>How long should the interview be?</li>
+          </ul>
+          <aside class="notes"></aside>
+        </section>
+        <section>
+          <h3>When user testing, we want to</h3><br>
+          <h1><strong>falsify</strong> our idea. </h1><br>
+          <h1><strong>Not</strong> validate it.</h1><br>
+          <p>If we lead with validation, we'll skew the interview trying to get the answers we want.</p>
+        </section>
+        <section>
+          <h3>Tips on interviewing</h3><br>
+          <ul>
+            <li>Keep them short and focused</li><br>
+            <li>Make it simple</li><br>
+            <li>Listen and ask follow up questions</li><br>
+            <li>Your job is to facilitate </li>
+          </ul>
+          <aside class="notes">
+            Keep the interview as short as 15 minutes. If it's longer, make sure you're giving people something for their time (like a $5 gift card for cofee), to thank them for their time. Keep the questions simple and let the participant guide the conversation as they try and compete the tasks. As they're completing tasks, make sure to listen and ask follow up questions if you see them struggle, hear them laugh or gasp, hear them say things like "oh, hmm, well..., uhhh" or sigh. These are all indications that there is an emotion happening, and you need to understand how that emotion could potentially effect your design. Your job is to facilitate the conversation. Don't ask leading questions or try to get them to identify a problem that you think exists.
+            
+          </aside>
+        </section>
+        <section>
+          <h3>The most important questions</h3><br>
+          <ul>
+            <li>Tell me about the last time you...</li><br>
+            <li>Show me how you would...</li><br>
+            <li>What do you expect to happen if...</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Make sure that you're</h3><br>
+          <ul>
+            <li>Taking notes as they're talking</li><br>
+            <li>Received verbal permission to record</li>
+          </ul>
+        </section>
+        <section>
+          <h2>What you should walk away with?</h2>
+        </section>
+        <section>
+          <h3>People had trouble doing _____________</h3>
+        </section>
+        <section>
+          <h3>People were able to easily ______________</h3>
+        </section>
+        <section>
+          <h3>Remember</h3><br>
+          <h1><strong>Past</strong> Behavior</h1><br>
+          <h1>Predicts <strong>Future</strong> Behavior</h1><br>
+          <p>If you understand a person's past behavior you can meet them where they are</p>
+        </section>
+        <section>
+          <h3>Step Four</h3>
+          <h1><strong>Analyze</strong> your interviews</h1>
+        </section>
+        <section>
+          <h3>Think about</h3><br>
+          <ul>
+            <li>What similarities did you find?</li><br>
+            <li>What were the biggest problems?</li><br>
+            <li>What did you do well?</li>
+          </ul>
+          <aside class="notes">
+            You're looking for patterns 
+            
+          </aside>
+        </section>
+        <section>
+          <h3>Create actionable results</h3><br>
+          <ul>
+            <li>What are you going to change?</li><br>
+            <li>What are you going leave the same?</li><br>
+            <li>What will you change for your next test (format, questions, etc.)?</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Step five</h3><br>
+          <h1>Lather, Rinse, <strong>Repeat</strong></h1><br>
+          <p>(if you have time)</p>
+        </section>
+        <section>
+          <h3>Step six</h3><br>
+          <h1><strong>Wrap</strong> it up </h1>
+        </section>
+        <section>
+          <h3>When is my design <strong>"good enough"</strong>?</h3>
+          <ul><br>
+            <li>The main interactions run smoothly</li><br>
+            <li>Feedback is mainly positive with minimum confusion </li><br>
+            <li>Users aren't visibly frustrated</li><br>
+            <li>You're not seeing consistent and similar errors across participants</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Step seven</h3><br>
+          <h1>Prepare for the <strong>Future</strong></h1>
+        </section>
+        <section>
+          <h3>Set up passive research and data collection</h3><br>
+          <ul>
+            <li>Helps you keep a pulse on what's happening</li><br>
+            <li>Direct feedback from visitors</li><br>
+            <li>Lets you identify changes that you should make more quickly</li><br>
+            <li>Provides evidence to advocate for that change</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Passive <strong>research</strong> collection</h3><br>
+          <ul>
+            <li>What did you come here to do today?</li><br>
+            <li>Have you been able to complete what you came here to do?</li><br>
+            <li>Great! (or) I'm sorry to hear that... What could we change to make your experience better?</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Get your research toolbox ready</h3><br>
+          <ul>
+            <li>Hotjar</li><br>
+            <li>Mouseflow</li><br>
+            <li>Qualtrics</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Passive <strong>data</strong> collection</h3><br>
+          <ul>
+            <li>Main funnel metrics</li><br>
+            <li>Scroll depth</li><br>
+            <li>Time on page</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Get your data toolbox ready</h3><br>
+          <ul>
+            <li>Google Analytics</li><br>
+            <li>Open Web Analytics</li><br>
+            <li>Chartbeat</li><br>
+            <li>Adobe Target</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Cool story Marisa... but why am I <strong>doing</strong> this?</h3>
+          <aside class="notes">
+            You'll hear where people are struggling, in their own words. If you see a dropoff in the checkout step of your funnel, that doesn't always mean that's where the issue is. It could be that just by the time they got to that step they'd gotten confused or lost trust. Research helps you identify why the friction is happening. The data helps you see where drop offs are occuring on a larger scale. You'll get a baseic idea of how many people are interacting with a page. You'll see where people are spending time. You'll see where the exit pages are, according to the user. 
+            
+          </aside>
+        </section>
+        <section> 
+          <h3>Step eight</h3><br>
+          <h1>Go on and <strong>ship it</strong>!</h1>
+        </section>
+        <section>
+          <h3>Check your passive collection</h3><br>
+          <ul>
+            <li>Look at the data and research every couple of weeks</li><br>
+            <li>Compile potential changes and tag them so you can refer to them later</li>
+          </ul>
+        </section>
+        <section>
+          <h3></h3><br>
+          <h1><strong>MOOOAR</strong> Iterative Testing!!!!</h1>
+        </section>
+        <section>
+          <h3>Remember</h3><br>
+          <h1>This is a <strong>framework</strong>. It's not <strong>dogma</strong>.</h1><br>
+          <p>Make the framework fit for your team</p>
+        </section>
+        <section>
+          <h3>What you should be aiming for</h3><br>
+          <ul>
+            <li>Creating a test and learn mindset</li><br>
+            <li>See how you can do quick testing and make changes that people need</li><br>
+            <li>Open the door for continual learning</li>
+          </ul>
+          <aside class="notes">
+            Go ahead and do the hard work upfront. Get those lo-fi designs out the door as quick as you can to test them. Make improvements, and test again.
+            
+          </aside>
+        </section>
+        <section>
+          <h3>Limitations with quick prototype testing with research</h3><br>
+          <ul>
+            <li>Not statistically significant</li><br>
+            <li>Can be anecdotal</li><br>
+            <li>Not to be taken as the last word</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Protoype testing helps you</h3><br>
+          <ul>
+            <li>Save money</li><br>
+            <li>Save time</li><br>
+            <li>Ensure <strong>awesome-ness</strong></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Remember</h3><br>
+          <h1><strong>Some</strong> research is always better than <strong>no</strong> research</h1><br>
+          <p>Good is better than perfect. Action is better than inaction.</p>
+        </section>
+        <section>
+          <h1><strong>Thanks!</strong></h1>
+          <h2>Questions... comments... cookies?</h2>
+          <p>@marisamorby</p>
+        </section>
+        <section>
+          <h3><strong>Resources</strong></h3>
+          <ul>
+            <li><strong>User Experience Strategy</strong> by Jamie Levy</li>
+            <li><a href="https://www.nngroup.com/"><strong>Nielsen Norman Group</strong></a></li>
+            <li><strong>Small Data: The Tiny Clues that Uncover Huge Trends</strong> by Martin Lindstro</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+      
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+      
+    </script>
+  </body>
+</html>

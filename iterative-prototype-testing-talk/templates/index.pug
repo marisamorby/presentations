@@ -1,0 +1,473 @@
+//- Use the presentation layout so we can keep this clean
+extends layouts/presentation
+
+//- Customize the title, meta description, and author using this block.
+block append config
+  -
+    config.title = 'reveal.js + Pug - The HTML Presentation Framework';
+    config.description = 'A framework for easily creating beautiful presentations using HTML by @hakimel. Ported to Pug by @jlengstorf.';
+  -
+
+//- Add your slides here. See templates/includes/_mixins.pug for information 
+//- on how `+slide` works.
+block slides
+
+  +slide
+    h2 Discover how 
+    h1 #[strong iterative prototype testing]
+    h2 Helps you create winning designs
+    p (every time!)
+   
+
+  +slide
+    h1 Hi, I'm #[strong Marisa]
+    aside.notes.
+      2 minutes for intro. 
+
+  +slide
+    h3 I'm the Head of Research at Clearhead. 
+    br 
+    p I'm responsible for #[strong Product Management and Research.]
+
+  +slide
+    p We do experience optimization and customer research for companies like #[strong Adidas, Tesco, Sonos,] and many more.
+    br
+    p My job is to make the process of buying or using products online #[strong better, faster, and easier].
+
+  +slide
+    h3 Today we'll...
+    br
+    ul
+      li Learn how to create a paper prototype
+      br
+      li Learn strategies for testing prototypes with minimal design and development effort
+      br
+      li See how to implement feedback early to ensure every design will be a winner
+    
+
+  +slide
+    h3 The #[strong old] process
+    br
+    ul
+      li Spend hours and hours designing and developing
+      br
+      li Ship the product or service to meet the deadline
+      br
+      li Watch in fear and horror as it tanks
+
+  +slide
+    img(style= "width: 1200px" src="gifs/puppy-explode.gif")
+    aside.notes.
+      We don't have to feel like this. We're experienced and creative people who create amazing things, but we can be our own worst enemy. We end up to focused on things that aren't going to make a measurable difference to the people we're trying to reach. 
+
+
+  +slide
+    h3 But what if it could be #[strong different]?
+
+  +slide
+    h3 Imagine the #[strong possiblities]
+    br
+    ul
+      li Spend hours and hours designing and developing
+      br
+      li Ship the product or service to meet the deadline
+      br
+      li #[strong Watch with excitement as you conquered]
+
+  +slide
+    img(style= "width: 1200px" src="gifs/girl-smashes-ornaments.gif")
+    aside.notes.
+      There's a better way to do what we do. And it's not going to mean convincing your boss, taking over your team, or spending more time or money. Instead, it's something you can immediately include in the process you've already got at your work. 
+ 
+  +slide
+    h3 The 
+    h1 #[strong new, improved, markedly better] 
+    h3 process
+
+
+  +slide
+    h3 Step One
+    h1 Start with your #[strong prototype] 
+    aside.notes.
+      How many of you here have done paper prototyping in the past? What other ways do you do low fidelity prototyping? Do you do prototyping at all?
+
+  
+  +slide
+    img(src="./img-2/file_003.jpeg")
+    aside.notes.
+      This extremely low fidelity paper prototype is a great first start to sketch out your idea. If you prefer to do low fidelity mockups with Sketch or Invision, that works, too. The goal is to get the initial steps and process written out.
+
+  +slide
+    h3 How to create a prototype
+    ul
+      li Cross-functional team 
+      br
+      li Collaboration
+      br
+
+  +slide
+    h3 Remember...
+    br
+    ul
+      li Keep the initial prototype low fidelity if it's a new design
+      br
+      li If you're updating an exisiting design, keep the first round of changes as low fidelity as possible
+
+  +slide
+    h3 Ok... but why?
+    br
+    ul
+      li You want to focus on the major interactions and design layout without getting too hung up on details
+      br
+      li Since you're doing #[strong iterative testing], you want to make sure you can pivot quickly
+
+  +slide
+    h3 Step Two
+    h1 Pick your #[strong Research]
+
+
+  +slide
+    h1 How would you...
+    
+  +slide
+    h3 Find your demographic?
+  
+  +slide
+    h3 Test them?
+      
+  +slide
+    h3 Identify available testing options?
+      
+  +slide
+    h3 Decide how long the test should be?
+    
+    aside.notes.
+      11:00 - 11:20. 20 minutes as an open discussion. What other questions should we ask ourselves? Think about email recruitment, surveys, polls, moderated and unmoderated testing. Consider resources and time available.
+
+  +slide 
+    h1 Questions to Ask
+
+  +slide
+    h3 Who are the people using our thing?
+
+  +slide
+    h3 Why are these people using our thing?
+
+  +slide
+    h3 How do people use our thing? And when?
+
+  +slide
+    h3 It's hide and seek... for #[strong professionals]!
+    p (not really)
+    
+  +slide
+    h3 Where to find people
+    ul
+      li Reddit
+      br
+      li LinkedIn
+      br
+      li Friends, Family, Acquaintances
+
+  +slide
+    h3 Cognitive Walkthrough
+    br
+    ul
+      li Subject Matter Expert review
+      br
+      li Use this when you're on a tight timeline and have to get information in a day or less
+
+  +slide
+    h3 Guerilla Research
+    br
+    ul
+      li Talking with humans that haven't seen your product or site
+      br
+      li Use this when you've got a few days (even 3 days is enough) to gather information and write it up
+
+  +slide
+    h3 What are the benefits of quick research tests?
+    br
+    ul
+      li Problem discovery
+      br
+      li Directional insights
+      br
+      li Actionable changes
+      br
+      li Get insights before you spend a lot of money 
+
+  +slide
+    h3 Step Three
+    h1 Create your #[strong questions]
+  
+  +slide
+    h3 Ask yourself
+    br
+    ul
+      li What is the main goal for the user?
+      br
+      li What are the top 3 things you want to learn from interview?
+      br
+      li How long should the interview be?
+    aside.notes.
+
+  +slide
+    h3 When user testing, we want to
+    br 
+    h1 #[strong falsify] our idea. 
+    br
+    h1 #[strong Not] validate it.
+    br
+    p If we lead with validation, we'll skew the interview trying to get the answers we want.
+
+  +slide
+    h3 Tips on interviewing
+    br
+    ul
+      li Keep them short and focused
+      br
+      li Make it simple
+      br 
+      li Listen and ask follow up questions
+      br
+      li Your job is to facilitate 
+    aside.notes.
+      Keep the interview as short as 15 minutes. If it's longer, make sure you're giving people something for their time (like a $5 gift card for cofee), to thank them for their time. Keep the questions simple and let the participant guide the conversation as they try and compete the tasks. As they're completing tasks, make sure to listen and ask follow up questions if you see them struggle, hear them laugh or gasp, hear them say things like "oh, hmm, well..., uhhh" or sigh. These are all indications that there is an emotion happening, and you need to understand how that emotion could potentially effect your design. Your job is to facilitate the conversation. Don't ask leading questions or try to get them to identify a problem that you think exists.
+
+  +slide
+    h3 The most important questions
+    br
+    ul
+      li Tell me about the last time you...
+      br
+      li Show me how you would...
+      br
+      li What do you expect to happen if...
+
+  +slide
+    h3 Make sure that you're
+    br
+    ul
+      li Taking notes as they're talking
+      br
+      li Received verbal permission to record
+
+  +slide
+    h2 What you should walk away with?
+
+  +slide
+    h3 People had trouble doing _____________
+
+  +slide
+    h3 People were able to easily ______________
+
+
+  +slide
+    h3 Remember
+    br
+    h1 #[strong Past] Behavior
+    br
+    h1 Predicts #[strong Future] Behavior
+    br
+    p If you understand a person's past behavior you can meet them where they are
+
+
+  +slide
+    h3 Step Four
+    h1 #[strong Analyze] your interviews
+
+  +slide
+    h3 Think about
+    br
+    ul
+      li What similarities did you find?
+      br
+      li What were the biggest problems?
+      br
+      li What did you do well?
+    aside.notes.
+      You're looking for patterns 
+
+  +slide
+    h3 Create actionable results
+    br
+    ul
+     li What are you going to change?
+     br
+     li What are you going leave the same?
+     br
+     li What will you change for your next test (format, questions, etc.)?
+
+  +slide
+    h3 Step five
+    br
+    h1 Lather, Rinse, #[strong Repeat]
+    br
+    p (if you have time)
+
+  +slide
+    h3 Step six
+    br
+    h1 #[strong Wrap] it up 
+
+  +slide
+    h3 When is my design #[strong "good enough"]?
+    ul
+     br
+     li The main interactions run smoothly
+     br  
+     li Feedback is mainly positive with minimum confusion 
+     br
+     li Users aren't visibly frustrated
+     br
+     li You're not seeing consistent and similar errors across participants
+
+  +slide
+    h3 Step seven
+    br
+    h1 Prepare for the #[strong Future]
+
+  +slide
+    h3 Set up passive research and data collection
+    br
+    ul
+      li Helps you keep a pulse on what's happening
+      br
+      li Direct feedback from visitors
+      br
+      li Lets you identify changes that you should make more quickly
+      br
+      li Provides evidence to advocate for that change
+
+  +slide
+    h3 Passive #[strong research] collection
+    br
+    ul
+      li What did you come here to do today?
+      br
+      li Have you been able to complete what you came here to do?
+      br 
+      li Great! (or) I'm sorry to hear that... What could we change to make your experience better?
+
+  +slide
+    h3 Get your research toolbox ready
+    br
+    ul
+      li Hotjar
+      br
+      li Mouseflow
+      br
+      li Qualtrics
+
+  +slide
+    h3 Passive #[strong data] collection
+    br
+    ul
+      li Main funnel metrics
+      br
+      li Scroll depth
+      br
+      li Time on page
+
+  +slide
+    h3 Get your data toolbox ready
+    br
+    ul
+      li Google Analytics
+      br
+      li Open Web Analytics
+      br
+      li Chartbeat
+      br
+      li Adobe Target
+    
+
+  +slide
+    h3 Cool story Marisa... but why am I #[strong doing] this?
+    aside.notes.
+      You'll hear where people are struggling, in their own words. If you see a dropoff in the checkout step of your funnel, that doesn't always mean that's where the issue is. It could be that just by the time they got to that step they'd gotten confused or lost trust. Research helps you identify why the friction is happening. The data helps you see where drop offs are occuring on a larger scale. You'll get a baseic idea of how many people are interacting with a page. You'll see where people are spending time. You'll see where the exit pages are, according to the user. 
+
+  +slide 
+    h3 Step eight
+    br
+    h1 Go on and #[strong ship it]!
+
+  +slide
+    h3 Check your passive collection
+    br
+    ul
+      li Look at the data and research every couple of weeks
+      br
+      li Compile potential changes and tag them so you can refer to them later
+  
+  +slide
+    h3
+    br
+    h1 #[strong MOOOAR] Iterative Testing!!!!
+
+  +slide
+    h3 Remember
+    br
+    h1 This is a #[strong framework]. It's not #[strong dogma].
+    br
+    p Make the framework fit for your team
+
+  +slide
+    h3 What you should be aiming for
+    br
+    ul
+      li Creating a test and learn mindset
+      br
+      li See how you can do quick testing and make changes that people need
+      br
+      li Open the door for continual learning
+    aside.notes.
+      Go ahead and do the hard work upfront. Get those lo-fi designs out the door as quick as you can to test them. Make improvements, and test again.
+
+  +slide
+    h3 Limitations with quick prototype testing with research
+    br
+    ul
+      li Not statistically significant
+      br
+      li Can be anecdotal
+      br
+      li Not to be taken as the last word
+
+  +slide
+    h3 Protoype testing helps you
+    br
+    ul
+      li Save money
+      br
+      li Save time
+      br
+      li Ensure #[strong awesome-ness]
+
+  +slide
+    h3 Remember
+    br
+    h1 #[strong Some] research is always better than #[strong no] research
+    br
+    p Good is better than perfect. Action is better than inaction.
+
+
+  +slide
+    h1 #[strong Thanks!]
+    h2 Questions... comments... cookies?
+    p @marisamorby
+
+
+  +slide
+    h3 #[strong Resources]
+    ul
+      li #[strong User Experience Strategy] by Jamie Levy
+      li
+        a(href="https://www.nngroup.com/") #[strong Nielsen Norman Group]
+
+      li #[strong Small Data: The Tiny Clues that Uncover Huge Trends] by Martin Lindstro
+      
+
+  
+
